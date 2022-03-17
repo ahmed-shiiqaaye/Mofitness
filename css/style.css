@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Poppins:wght@400;500&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family:sans-serif;
+}
+:root{
+    --green:#12af4a;
+    --lightGreen:#8ccc37;
+    --trision:all .3s ease-in-out;
+    --orange:rgb(255, 81, 0);
+    --light:rgba(255,255,255,.7);
+}
+.btn{
+    background: var(--orange);
+    color: white;
+    transition: var(--trision);
+    cursor: pointer;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 36px;
+    border: 1px solid transparent;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn:hover{
+    border: 1px solid var(--orange);
+    background: transparent;
+    color: white;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.navbar .container .logo .icon{
+    color: var(--orange);
+    margin-right: 8px;
+    font-size: 28px;
+}
+.navbar .container .logo .name{
+    color: black;
+    font-size: 22px;
+}
+.navbar .container .logo .name span{
+    color:var(--orange);
+}
+.navbar .container .links ul{
+    display: flex;
+}
+.navbar .container .links ul li{
+    margin: 0 4px;
+    padding: 4px 8px;
+}
+.navbar .container .links ul li a{
+    color: black;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar .container .links ul li a:hover{
+    color: var(--green);
+}
+.navbar .container button.btn{
+    padding: 4px 6px;
+    font-size: 20px;
+    display: none;
+}
+/* showcase */
+.showcase{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(/img/anastase-maragos-fG0p4Qh_aWI-unsplash-min.jpg) center center/cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+.showcase .container .text {
+    padding-top: 100px;
+    text-transform: capitalize;
+}
+.showcase .container .text h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+.showcase .container .text p{
+    color:var(--light) ;
+    margin-bottom: 25px;
+}
+.showcase .container .text span{
+    color: var(--orange);
+}
+.container .title{
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 20px 0;
+    color: rgb(255, 81, 0);
+    position: relative;
+    margin-bottom: 20px;
+}
+.container .title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 8px;
+    background: var(--orange);
+}
+/* about */
+.about {
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0.85);
+}
+.about .container{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about .container p{
+    color: white;
+}
+.about .container .img{
+    flex: 1 1 100rem;
+}
+@media(max-width:991px){
+    .about .container{
+       flex-direction: column;
+    }  
+    .about .container .img{
+        /* height: 400px; */
+        flex: 1 1 0;
+    } 
+    .about .container .img img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.about .container h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--orange);
+}
+/* our program section */
+.program{
+    padding: 40px 0 80px;
+    background: rgba(0, 0, 0, 0.9);
+}
+.program .container p{
+    text-transform: capitalize;
+    color:white;
+    margin-bottom: 50px;
+}
+.program .container .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+}
+.program .container .grid .card{
+    padding: 20px 40px 20px 20px;
+    text-transform: capitalize;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.program .container .grid .card p{
+    color: #000;
+    font-family: poppins;
+
+}
+.program .container .grid .card h3{
+    color: var(--orange);
+}
+.program .container .grid i{
+    font-size: 35px;
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+.program .container .grid h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* discount */
+.discount{
+    padding: 100px 0;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+    url(/img/john-arano-h4i9G-de7Po-unsplash-min.jpg) center center/cover;
+    text-align: center;   
+    color: white;
+    text-transform: capitalize;
+}
+.discount .container h1{
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.discount .container p{
+    color: var(--light);
+    margin-bottom: 20px;
+}
+/* trainig  */
+.training{
+    padding: 30px 0;
+    background: var(--orange);
+    position: relative;
+    height: 300px;
+}
+.training .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.training .container img{
+    position: relative;
+    height: 100%;
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+}
+@media(max-width:800px){
+    .training .container {
+        grid-template-columns: 1fr;
+    }
+    .training .container img{
+        display: none;
+    }
+}
+.training .container .text h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.training .container .text p{
+    color: var(--light);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.training .container .text .btn{
+    border:1px solid white;
+    background: transparent;
+}
+.training .container .text .btn:hover{
+    background: black;
+}
+/* featured */
+.featured{
+    /* background: linear-gradient(rgba(255,255,255,.69),rgba(255,255,255,.9)),
+    url(/img/john-arano-h4i9G-de7Po-unsplash-min.jpg) center center/cover;
+    */
+    background: rgb(0, 0, 0,.85);
+    padding: 50px 0 100px;
+}
+.featured .container .p{
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.904);
+}
+.featured .container .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+.featured img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+.featured .container .grid .card{
+    background:white;
+    box-shadow: 0 0 ;
+    border-radius: 0;
+    border-bottom: 10px solid var(--orange);
+}
+.featured .container .grid .card .text{
+    padding:15px;
+    text-align:center;
+}
+.featured .container .grid .card .text h3{
+    color: var(--orange);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.featured .container .grid .card .text p{
+    line-height: 1.6;
+}
+@media(max-width:1000px){
+    .featured .container{
+        max-width: 800px;
+    }
+    .featured .container .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 30px;
+    }
+}
+/* coached */
+.coaches{
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0.85);
+}
+.coaches .container h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    color: var(--orange);
+}
+.coaches .container h1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 200px;
+    height: 5px;
+    border-radius: 2px;
+    background: var(--orange);   
+}
+.coaches .container .p{
+    text-align: center;
+    line-height: 1.6;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 50px;
+}
+.coaches .container .grid{
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.coaches .container .grid .card{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.coaches .container .grid .card .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background: rgba(255,255,255,.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: var(--trision);
+}
+.coaches .container .grid .card:hover .text{
+    opacity: 1;
+}
+.coaches .container .grid .card .text h3{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: josefin sans;
+}
+.coaches .container .grid .card .text p{
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+/* carouselExampleCaptions */
+.accordion-item, .accordion{
+    border-bottom: 1px solid var(--orange);
+}
+
+/* shax */
+.shax{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url(/img/ginny-rose-stewart-UxkcSzRWM2s-unsplash-min.jpg) center center/cover;
+    padding: 80px 0;
+}
+
+.shax .container p{
+    color:rgba(255, 255, 255, 0.85);
+    margin-bottom: 40px;
+}
+.shax .table_wrapp{
+    width: 100%;
+    overflow: auto;
+
+}
+.shax .container table{
+    width: 100%;
+    width: 900px;
+    border: 1px dotted var(--orange);
+    color: white;
+    text-transform: capitalize;
+}
+.shax .container table th{
+    color: var(--orange);
+}
+.shax .container table th, td{
+    border: 1px dotted var(--orange);
+}
+.shax .container table th, td {
+    padding: 10px;
+}
+.shax .container table td span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shax .container table td span.n{
+    font-weight: bold;
+}
