@@ -171,6 +171,9 @@ img{
     .showcase .container .text h1{
         font-size: px;
     }
+    .showcase{
+        height: 90vh;
+    }
 }
 .showcase .container .text p{
     color:var(--light) ;
@@ -207,27 +210,18 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
-
 .about .container p{
     color: white;
 }
 .about .container .img{
-    flex: 1 1 100rem;
+
+    flex: 1 1 30rem;
 }
-@media(max-width:991px){
-    .about .container{
-       flex-direction: column;
-    }  
-    .about .container .img{
-        /* height: 400px; */
-        flex: 1 1 10rem;
-    } 
-    .about .container .img img{
-        height: 100%;
-        width: 100%;
-    }
+.about .container .text{
+    flex: 1 1 30rem;
 }
 .about .container h1{
     font-size: 40px;
