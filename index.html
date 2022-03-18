@@ -19,7 +19,7 @@
             <span class="icon"><i class="fas fa-dumbbell"></i></span>
             <h3 class="name">MO<span>FITNESS</span></h3>
         </a>
-        <div class="links">
+        <div class="links" id="links">
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#classes">classes</a></li>
@@ -28,7 +28,7 @@
                 <li><a href="#classes">contact</a></li>
             </ul>
         </div>
-        <button class="btn"><i class="fa fa-bars"></i></button>
+        <button class="btn menu-bar" id="menus"><i class="fa fa-bars" id="myminu"></i></button>
     </div>
 </div>
     <!-- showcase -->
@@ -273,10 +273,95 @@
     <div class="teach">
         <div class="container">
             <h1 class="title">Mofitness trainers</h1>
-            <p>these are our trainers in this center you can get in touch them to help you.</p>
+            <p  class="p">these are our trainers in this center you can get in touch them to help you.</p>
             <div class="grid">
                 <div class="card">
-                    <img src="" alt="">
+                    <img src="./img/emily-sea-coiWR0gT8Cw-unsplash-min.jpg" alt="">
+                    <div class="pop">
+                        <h3>alex meris</h3>
+                        <p>women full body</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/total-shape-TY_Ce5d2G-k-unsplash-min.jpg" alt="">
+                    <div class="pop">
+                        <h3>Mo fit</h3>
+                        <p>Head Quater</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/sule-makaroglu-YFmvjO3TP_s-unsplash-min.jpg" alt="">
+                    <div class="pop">
+                        <h3>James</h3>
+                        <p>chest and back</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/damir-spanic-rHDK3UU7HUw-unsplash-min.jpg" alt="">
+                    <div class="pop">
+                        <h3> meris</h3>
+                        <p>six pack</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial -->
+    <div class="mycrousel">
+        <div class="container">
+            <h1 class="title">our clients</h1>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consectetur ab. Rem nisi asperiores obcaecati magni, commodi animi distinctio assumenda?</p>
+                    <div class="img">
+                        <img src="./img/emily-sea-coiWR0gT8Cw-unsplash-min.jpg" alt="">
+                        <h3 class="name">john doe</h3>
+                        <span class="jop">house wife</span>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consectetur ab. Rem nisi asperiores obcaecati magni, commodi animi distinctio assumenda?</p>
+                    <div class="img">
+                        <img src="./img/emily-sea-coiWR0gT8Cw-unsplash-min.jpg" alt="">
+                        <h3 class="name">john doe</h3>
+                        <span class="jop">house wife</span>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, consectetur ab. Rem nisi asperiores obcaecati magni, commodi animi distinctio assumenda?</p>
+                    <div class="img">
+                        <img src="./img/emily-sea-coiWR0gT8Cw-unsplash-min.jpg" alt="">
+                        <h3 class="name">john doe</h3>
+                        <span class="jop">house wife</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="contact">
+        <div class="container">
+            <div class="inner">
+                <form>
+                    <div class="both">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <div class="both">
+                        <input type="text" placeholder="phone">
+                        <input type="text" placeholder="email*">
+                    </div>
+                    <textarea cols="30" rows="10" placeholder="message"></textarea>
+                    <button class="btn">contact us</button>
+                </form>
+                <div class="img">
+                    <img src="./img/coen-van-de-broek-OFyh9TpMyM8-unsplash-min.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -285,9 +370,7 @@
 
 
 
-
-
-
+    <script src="./js/app.js"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/405f30ee9a.js"></script>
     <!-- bootstrap -->
