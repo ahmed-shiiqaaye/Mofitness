@@ -622,6 +622,15 @@ img{
 .image-gallery{
     padding: 20px 0px 70px;
 }
+.image-gallery .container .p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.65);
+    margin-bottom: 50px;
+}
+.image-gallery .container .p span{
+    color: var(--orange);
+    font-weight: 600;
+}
 .image-gallery .container .btns{
     display: flex;
     justify-content: space-around;
