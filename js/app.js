@@ -36,3 +36,16 @@ window.onload = () => {
         }
     });
 }
+
+// fixed to top
+let pop = document.querySelector('.pop');
+window.addEventListener('scroll', ()=>{
+    let hei = 300
+    let srcol = window.pageYOffset;
+    console.log(srcol)
+    if(srcol > hei){
+        pop.style.display = 'flex'
+    }else{
+        pop.style.display = 'none'
+    }
+})
