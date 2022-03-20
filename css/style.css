@@ -71,7 +71,6 @@ img{
 .navbar .container .logo .name{
     color: rgba(255, 255, 255, 0.85);
     font-size: 22px;
-    font-weight: 800;
 }
 .navbar .container .logo .name span{
     color:var(--orange);
@@ -167,6 +166,7 @@ img{
     font-weight: bold;
     margin-bottom: 20px;
     line-height: 1.4;
+    text-transform: uppercase;
 }
 @media(max-width:708px){
     .showcase .container .text h1{
