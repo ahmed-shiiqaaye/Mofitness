@@ -864,6 +864,7 @@ footer .container div .form input{
     background: transparent;
     color: white;
     padding-right: 17px;
+    padding-left: 10px;
 }
 footer hr{
     color: rgba(255,255,255,.5);
